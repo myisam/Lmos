@@ -1,0 +1,125 @@
+$def with (server_info)
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="widget">
+        <div class="wTitle">
+          <h5>增加服务器</h5>
+        </div>
+        <div class="wContent">
+          <form novalidate="novalidate" id="validate" action="" method="post">
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">服务器标识</span>
+                </div>
+                <div class="span9">
+                  <input name="hostname" type="text" value="$server_info['hostname']">
+                </div>
+              </div>
+            </div>
+
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">IP地址1</span>
+                </div>
+                <div class="span9">
+                  <input name="ip1" type="text" value="$server_info['ip1']">
+                </div>
+              </div>
+            </div>
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">IP地址2</span>
+                </div>
+                <div class="span9">
+                  <input name="ip2" type="text" value="$server_info['ip2']">
+                </div>
+              </div>
+            </div>
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">项目</span>
+                </div>
+                <div class="span9">
+                  <input name="project" type="text" value="$server_info['project']">
+                </div>
+              </div>
+            </div>
+
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">硬件信息</span>
+                </div>
+                <div class="span9">
+                  <input name="hostconfig" type="text" value="$server_info['hostconfig']">
+                </div>
+              </div>
+            </div>
+
+            <div class="formWizard">
+              <div class="row-fluid">
+                <div class="span3">
+                  <span class="fLabel">IDC</span>
+                </div>
+                <div class="span9">
+                  <input name="idc" type="text" value="$server_info['idc']">
+                </div>
+              </div>
+            </div>
+
+            <div class="formButtons">
+              <div class="row-fluid">
+                <div class="span12" align="right">
+                  <button type="reset" class="button sButton bMuddy">Cancel</button>
+                  <button type="submit" class="button sButton bMuddy">Submit form</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="divider"><div><span></span></div></div>
+
+<div class="contentInner">
+    <div class="widget">
+      <div class="wTitle">
+        <h5>服务器列表</h5>
+      </div>
+      <div class="wContent" align="center">
+<table cellpading="0" class="dTable" border="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th>服务器标识</th>
+      <th>IP地址1</th>
+      <th>IP地址2</th>
+      <th>项目</th>
+      <th>硬件信息</th>
+      <th>IDC</th>
+    </tr>
+  </thead>
+<tbody align="center">
+              <tr>
+                <td>$server_info['hostname']</td>
+                <td>$server_info['ip1']</td>
+                <td>$server_info['ip2']</td>
+                <td>$server_info['project']</td>
+                <td>$server_info['hostconfig']</td>
+                <td>$server_info['idc']</td>
+              </tr>
+
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+

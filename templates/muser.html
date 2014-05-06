@@ -1,0 +1,89 @@
+$def with (user_info)
+         <div class="wContent" align="center">
+                  <table cellpading="0" class="dTable" border="0" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>用户名</th>
+                        <th>电话</th>
+                        <th>邮箱</th>
+                        <th>最后登录时间</th>
+                        <th>最后登录IP</th>
+                      </tr>
+                    </thead>
+                    <tbody align="center">
+                      <tr>
+                        <td>$user_info['username']</td>
+                        <td>$user_info['phone']</td>
+                        <td>$user_info['email']</td>
+                        <td>$user_info['lastlogin']</td>
+                        <td>$user_info['loginip']</td>
+                      </tr>
+                    </tbody>
+                  </table>
+         </div>
+                       <div class="divider"><div><span></span></div></div>
+        <div class="contentInner">
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="widget">
+                <div class="wTitle">
+                  <h5>修改用户</h5>
+                </div>
+                <div class="wContent">
+                  <form novalidate="novalidate" id="validate"  method="post" action="">
+                    <div class="formWizard">
+                      <div class="row-fluid">
+                        <div class="span3">
+                          <span class="fLabel">用户名</span>
+                        </div>
+                        <div class="span9">
+                          <input name="username" type="text" value="$user_info['username']" placeholder="必填项" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="formWizard">
+                      <div class="row-fluid">
+                        <div class="span3">
+                          <span class="fLabel">密码</span>
+                        </div>
+                        <div class="span9">
+                          <input name="password" type="password" value="$user_info['password']" placeholder="必填项" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formWizard">
+                      <div class="row-fluid">
+                        <div class="span3">
+                          <span class="fLabel">手机</span>
+                        </div>
+                        <div class="span9">
+                          <input name="phone" type="text" value="$user_info['phone']" placeholder="必填项" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formWizard">
+                      <div class="row-fluid">
+                        <div class="span3">
+                          <span class="fLabel">邮箱</span>
+                        </div>
+                        <div class="span9">
+                          <input name="email" type="text" value="$user_info['email']" placeholder="必填项" required pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$" title="邮箱正确格式：xxx@xxx.xxx">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="formButtons">
+                      <div class="row-fluid">
+                        <div class="span12" align="right">
+                          <button type="submit" class="button sButton bMuddy">修改</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>

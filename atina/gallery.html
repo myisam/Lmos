@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Atina - Premium Admin Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/colors/noise-red.css" rel="stylesheet" id="theme">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <link href="css/ie8.css" rel="stylesheet">
+      <script src="../../html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <script>
+      //* hide all elements & show preloader
+      document.documentElement.className += 'loader';
+    </script>
+  </head>
+
+  <body>
+
+    <div class="loading"><img src="img/ajaxLoader/loader01.gif" alt=""></div>
+
+    <div class="mainContainer">
+
+      <ul class="responsiveNav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="forms.html">Form elements <span>+</span></a>
+          <ul>
+            <li><a href="forms.html"><span>+</span> Form elements</a></li>
+            <li><a href="forms-wizard.html"><span>+</span> Form wizards</a></li>
+            <li><a href="forms-validate.html"><span>+</span> Form validation</a></li>
+            <li><a href="input-grid.html"><span>+</span> Input grid</a></li>
+          </ul>
+        </li>
+        <li><a href="charts.html">Charts & Graphs</a></li>
+        <li><a href="#">Components <span>+</span></a>
+          <ul>
+            <li><a href="bootstrap-components.html"><span>+</span> Bootstrap elements</a></li>
+            <li><a href="grid.html"><span>+</span> Bootstrap grid</a></li>
+            <li><a href="gallery.html"><span>+</span> Gallery & thumbnails</a></li>
+          </ul>
+        </li>
+        <li><a href="icons.html">Icons</a></li>
+        <li><a href="#">UI elements <span>+</span></a>
+          <ul>
+            <li><a href="ui-elements.html"><span>+</span> Main UI elements</a></li>
+            <li><a href="buttons.html"><span>+</span> Buttons</a></li>
+            <li><a href="messages.html"><span>+</span> Messages</a></li>
+            <li><a href="player.html"><span>+</span> UI HTML5 Player</a></li>
+          </ul>
+        </li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="index.html">Error pages <span>+</span></a>
+          <ul>
+            <li><a href="403.html"><span>+</span> 403</a></li>
+            <li><a href="404.html"><span>+</span> 404</a></li>
+            <li><a href="405.html"><span>+</span> 405</a></li>
+            <li><a href="500.html"><span>+</span> 500</a></li>
+            <li><a href="502.html"><span>+</span> 502</a></li>
+            <li><a href="offline.html"><span>+</span> Offline page</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Other pages <span>+</span></a>
+          <ul>
+            <li><a href="inbox.html"><span>+</span> Inbox</a></li>
+            <li><a href="invoice.html"><span>+</span> Invoice</a></li>
+            <li><a href="login.html"><span>+</span> Login page</a></li>
+            <li><a href="#"><span>+</span> Typograhpy</a></li>
+            <li><a href="calendar.html"><span>+</span> Calendar</a></li>
+            <li><a href="file-uploader.html"><span>+</span> File manager</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="responsiveNav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="forms.html">Form elements <span>+</span></a>
+          <ul>
+            <li><a href="forms.html"><span>+</span> Form elements</a></li>
+            <li><a href="forms-wizard.html"><span>+</span> Form wizards</a></li>
+            <li><a href="forms-validate.html"><span>+</span> Form validation</a></li>
+            <li><a href="input-grid.html"><span>+</span> Input grid</a></li>
+          </ul>
+        </li>
+        <li><a href="charts.html">Charts & Graphs</a></li>
+        <li><a href="#">Components <span>+</span></a>
+          <ul>
+            <li><a href="bootstrap-components.html"><span>+</span> Bootstrap elements</a></li>
+            <li><a href="grid.html"><span>+</span> Bootstrap grid</a></li>
+            <li><a href="gallery.html"><span>+</span> Gallery & thumbnails</a></li>
+          </ul>
+        </li>
+        <li><a href="icons.html">Icons</a></li>
+        <li><a href="#">UI elements <span>+</span></a>
+          <ul>
+            <li><a href="ui-elements.html"><span>+</span> Main UI elements</a></li>
+            <li><a href="buttons.html"><span>+</span> Buttons</a></li>
+            <li><a href="messages.html"><span>+</span> Messages</a></li>
+            <li><a href="player.html"><span>+</span> UI HTML5 Player</a></li>
+          </ul>
+        </li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="index.html">Error pages <span>+</span></a>
+          <ul>
+            <li><a href="403.html"><span>+</span> 403</a></li>
+            <li><a href="404.html"><span>+</span> 404</a></li>
+            <li><a href="405.html"><span>+</span> 405</a></li>
+            <li><a href="500.html"><span>+</span> 500</a></li>
+            <li><a href="502.html"><span>+</span> 502</a></li>
+            <li><a href="offline.html"><span>+</span> Offline page</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Other pages <span>+</span></a>
+          <ul>
+            <li><a href="inbox.html"><span>+</span> Inbox</a></li>
+            <li><a href="invoice.html"><span>+</span> Invoice</a></li>
+            <li><a href="login.html"><span>+</span> Login page</a></li>
+            <li><a href="typography.html"><span>+</span> Typograhpy</a></li>
+            <li><a href="calendar.html"><span>+</span> Calendar</a></li>
+            <li><a href="file-uploader.html"><span>+</span> File manager</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="containerNav">
+        <ul class="noFluidNav">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="forms.html">Form elements <span>+</span></a>
+            <ul>
+              <li><a href="forms.html"><span>+</span> Form elements</a></li>
+              <li><a href="forms-wizard.html"><span>+</span> Form wizards</a></li>
+              <li><a href="forms-validate.html"><span>+</span> Form validation</a></li>
+              <li><a href="input-grid.html"><span>+</span> Input grid</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html">Charts & Graphs</a></li>
+          <li class="active"><a href="#">Components <span>+</span></a>
+            <ul>
+              <li><a href="bootstrap-components.html"><span>+</span> Bootstrap elements</a></li>
+              <li><a href="grid.html"><span>+</span> Bootstrap grid</a></li>
+              <li class="active"><a href="gallery.html"><span>+</span> Gallery & thumbnails</a></li>
+            </ul>
+          </li>
+          <li><a href="icons.html">Icons</a></li>
+          <li><a href="#">UI elements <span>+</span></a>
+            <ul>
+              <li><a href="ui-elements.html"><span>+</span> Main UI elements</a></li>
+              <li><a href="buttons.html"><span>+</span> Buttons</a></li>
+              <li><a href="messages.html"><span>+</span> Messages</a></li>
+              <li><a href="player.html"><span>+</span> UI HTML5 Player</a></li>
+            </ul>
+          </li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="index.html">Error pages <span>+</span></a>
+            <ul>
+              <li><a href="403.html"><span>+</span> 403</a></li>
+              <li><a href="404.html"><span>+</span> 404</a></li>
+              <li><a href="405.html"><span>+</span> 405</a></li>
+              <li><a href="500.html"><span>+</span> 500</a></li>
+              <li><a href="502.html"><span>+</span> 502</a></li>
+              <li><a href="offline.html"><span>+</span> Offline page</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">Other pages <span>+</span></a>
+            <ul>
+              <li><a href="inbox.html"><span>+</span> Inbox</a></li>
+              <li><a href="invoice.html"><span>+</span> Invoice</a></li>
+              <li><a href="login.html"><span>+</span> Login page</a></li>
+              <li><a href="typography.html"><span>+</span> Typograhpy</a></li>
+              <li><a href="calendar.html"><span>+</span> Calendar</a></li>
+              <li><a href="file-uploader.html"><span>+</span> File manager</a></li>
+              <li><a href="#"><span>+</span> Open third level</a>
+                <ul>
+                  <li><a href="#"><span>+</span> Third level</a></li>
+                  <li><a href="#"><span>+</span> Third level</a></li>
+                  <li><a href="#"><span>+</span> Third level</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <header>
+        <div>
+          <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+          
+          <ul class="headerButtons">
+            <li class="respNav"><a href="#"><img src="img/icons/14x14/light/list.png" alt=""></a></a></li>
+            <li class="conta"><a href="#" class="changeContainer"><span class="container"></span></a></li>
+            <li><a href="#"><img src="img/icons/14x14/light/cog.png" alt=""></a></li>
+            <li class="layout"><a href="#" class="layoutChange"><span class="layoutLeft"></span></a></li>
+            <li><a href="#"><img src="img/icons/14x14/light/lock3.png" alt=""></a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="widgetBar">
+        <div class="barInner">
+          <ul class="navigation">
+            <li><a href="index.html"><i class="icon-white icon-th-large"></i> Dashboard</a></li>
+            <li><a href="#"><i class="icon-white icon-list"></i> Form elements</a>
+              <ul class="subMenu">
+                <li><a href="forms.html"><span>+</span> Form elements</a></li>
+                <li><a href="forms-wizard.html"><span>+</span> Form wizards</a></li>
+                <li><a href="forms-validate.html"><span>+</span> Form validation</a></li>
+                <li><a href="input-grid.html"><span>+</span> Input grid</a></li>
+              </ul>
+            </li>
+            <li><a href="charts.html"><i class="icon-white icon-signal"></i> Charts & Grahps</a></li>
+            <li class="active"><a href="#"><i class="icon-white icon-th"></i>  Components</a>
+              <ul class="subMenu">
+                <li><a href="bootstrap-components.html"><span>+</span> Bootstrap elements</a></li>
+                <li><a href="grid.html"><span>+</span> Bootstrap grid</a></li>
+                <li class="active"><a href="gallery.html"><span>+</span> Gallery & thumbnails</a></li>
+              </ul>
+            </li>
+            <li><a href="icons.html"><i class="icon-white icon-leaf"></i> Icons</a></li>
+            <li><a href="#"><i class="icon-white icon-heart"></i> UI elements</a>
+              <ul class="subMenu">
+                <li><a href="ui-elements.html"><span>+</span> Main UI elements</a></li>
+                <li><a href="buttons.html"><span>+</span> Buttons</a></li>
+                <li><a href="messages.html"><span>+</span> Messages</a></li>
+                <li><a href="player.html"><span>+</span> UI HTML5 Player</a></li>
+              </ul>
+            </li>
+            <li><a href="tables.html"><i class="icon-white icon-tasks"></i> Tables</a></li>
+            <li><a href="#"><i class="icon-white icon-ban-circle"></i> Error pages</a>
+              <ul class="subMenu">
+                <li><a href="403.html"><span>+</span> Error 403</a></li>
+                <li><a href="404.html"><span>+</span> Error 404</a></li>
+                <li><a href="405.html"><span>+</span> Error 405</a></li>
+                <li><a href="500.html"><span>+</span> Error 500</a></li>
+                <li><a href="502.html"><span>+</span> Error 502</a></li>
+                <li><a href="#"><span>+</span> Offline page</a></li>
+              </ul>
+            </li>
+            <li><a href="typography.html"><i class="icon-white icon-align-justify"></i> Typograhpy</a></li>
+            <li><a href="calendar.html"><i class="icon-white icon-calendar"></i> Calendar</a></li>
+            <li><a href="file-uploader.html"><i class="icon-white icon-folder-close"></i> File manager</a></li>
+            <li><a href="#"><i class="icon-white icon-asterisk"></i> Other pages</a>
+              <ul class="subMenu">
+                <li><a href="inbox.html"><span>+</span> Inbox</a></li>
+                <li><a href="invoice.html"><span>+</span> Invoice</a></li>
+                <li><a href="login.html"><span>+</span> Login</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="widgetBarContent">
+            <div class="divider"><div><span></span></div></div>
+            <div align="center">
+              <div class="pieChart">
+                  <div class="percentage" data-percent="55"><span>55</span>%</div>
+                  <span>New visits</span>
+              </div>
+              <div class="pieChart">
+                  <div class="percentage02" data-percent="32"><span>32</span>%</div>
+                  <span>New orders</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="widgetBarContent">
+            <div class="divider"><div><span></span></div></div>
+            
+            <div class="progressBox">
+              <span class="widgetBarTitle">Diskspace usage:</span>
+              <div class="green-progress spaceProgress"></div>
+              <span class="value vSpace"></span>
+            </div>
+
+            <div class="progressBox">
+              <span class="widgetBarTitle">File count:</span>
+              <div class="red-progress fileProgress"></div>
+              <span class="value fSpace"></span>
+            </div>
+
+            <div class="progressBox">
+              <span class="widgetBarTitle">Bandwidth limit:</span>
+              <div class="orange-progress bandwidthProgress"></div>
+              <span class="value bSpace"></span>
+            </div>
+
+            <div class="divider"><div><span></span></div></div>
+          </div>
+          <div class="widgetBarContent">
+            <span class="widgetBarTitle">Chat windows:</span>
+          </div>
+          <ul class="chatBar">
+            <li>
+              <a href="#" class="online">
+                <img class="avatar" src="preview/avatar.jpg" alt="">
+                <span class="name">Adam Smith</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="offline">
+                <img class="avatar" src="preview/avatar.jpg" alt="">
+                <span class="name">June Marry</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="online">
+                <img class="avatar" src="preview/avatar.jpg" alt="">
+                <span class="name">Joshua Josh</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="away">
+                <img class="avatar" src="preview/avatar.jpg" alt="">
+                <span class="name">Mark Johan</span>
+              </a>
+            </li>
+          </ul>
+          <div class="widgetBarContent">
+            <div class="divider"><div><span></span></div></div>
+            <div id="date"></div>
+            <div class="divider"><div><span></span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="styleChoose rightStyle">
+          <a href="#" class="pullStyle"><span><img src="img/icons/14x14/cog2.png" alt=""></span></a>
+          <div class="colors">
+            <ul id="styling">
+              <li><a href="javascript:void(0)" title="noise-black" id="noise-black"></a></li>
+              <li><a href="javascript:void(0)" title="noise-red" id="noise-red"></a></li>
+              <li><a href="javascript:void(0)" title="noise-green" id="noise-green"></a></li>
+              <li><a href="javascript:void(0)" title="noise-orange" id="noise-orange"></a></li>
+              <li><a href="javascript:void(0)" title="noise-blue" id="noise-blue"></a></li>
+              <li><a href="javascript:void(0)" title="noise-purple" id="noise-purple"></a></li>
+              <li><a href="javascript:void(0)" title="noise-yellow" id="noise-yellow"></a></li>
+            </ul>
+          </div>
+          <div class="settings">
+            <div class="navStyle">
+              <label class="formButton"><input type="radio" name="check" id="lnav" checked="checked"> <span>Left navigation</span></label>
+              <label class="formButton"><input type="radio" name="check" id="tnav"> <span>Top navigation</span></label>
+            </div>
+            <div class="patternchange">
+              <span>Container pattern:</span>
+              <ul class="containerPattern">
+                <li><a href="#" id="pattern01"><img src="img/patterns/pattern01.png" alt=""></a></li>
+                <li><a href="#" id="pattern02"><img src="img/patterns/pattern02.png" alt=""></a></li>
+                <li><a href="#" id="pattern03"><img src="img/patterns/pattern03.png" alt=""></a></li>
+                <li><a href="#" id="pattern04"><img src="img/patterns/pattern04.png" alt=""></a></li>
+                <li><a href="#" id="pattern05"><img src="img/patterns/pattern05.png" alt=""></a></li>
+                <li><a href="#" id="pattern06"><img src="img/patterns/pattern06.png" alt=""></a></li>
+                <li><a href="#" id="pattern07"><img src="img/patterns/pattern07.png" alt=""></a></li>
+                <li><a href="#" id="pattern08"><img src="img/patterns/pattern08.png" alt=""></a></li>
+                <li><a href="#" id="pattern09"><img src="img/patterns/pattern09.png" alt=""></a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="topBar">
+          <div class="topBarInner">
+            <ul class="breadcrumbs">
+              <li><a href="#"><img src="img/icons/14x14/home5.png" alt=""></a></li>
+              <li><a href="#">Input grid</a></li>
+            </ul>
+
+            <ul class="profile barButtons">
+              <li class="profile"><a href="#"><img src="img/icons/14x14/member2.png" alt=""> Bernad Delic <span class="arrow"></span></a>
+                <ul>
+                  <div class="profileInfo clearfix">
+                    <img src="preview/avatar.jpg" alt="">
+                    <div class="info">
+                      <h5>Bernad Delic</h5>
+                      <a href="#">user@something.com</a>
+                    </div>
+                  </div>
+                  <li><a href="#"><img src="img/icons/14x14/random.png" alt=""> Basic settings</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/lock3.png" alt=""> User settings</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/cog2.png" alt=""> Preferences</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/lock3.png" alt=""> Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="barButtons">
+              <li><a href="#"><img src="img/icons/14x14/cog.png" alt=""> Settings <span class="arrow"></span></a>
+                <ul>
+                  <li><a href="#"><img src="img/icons/14x14/random.png" alt=""> Basic settings</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/lock3.png" alt=""> User settings</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/cog2.png" alt=""> Preferences</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="img/icons/14x14/pad.png" alt=""> New orders <strong>(5)</strong></a></li>
+              <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> Monthly reports <span class="arrow"></span></a>
+                <ul>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> <strong>January 2013</strong></a>
+                    <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> December 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> November 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> October 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> September 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> August 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> July 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> June 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> May 2012</a>
+                      <a href="#" class="ctrlButton"><img src="img/icons/14x14/download4.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/random.png" alt=""> View all reports</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="img/icons/14x14/file.png" alt=""> Invoices <span class="arrow"></span></a>
+                <ul>
+                  <li><a href="#"><img src="img/icons/14x14/printer2.png" alt=""> Print latest invoice</li></a>
+                  <li><a href="#"><img src="img/icons/14x14/box2.png" alt=""> Invoice archive</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/plus.png" alt=""> Create new invoice</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="img/icons/14x14/envlope1.png" alt=""> Messages <strong>(3)</strong> <span class="arrow"></span></a>
+                <ul>
+                  <li><a href="#"><img src="img/icons/14x14/plus.png" alt=""> New message</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/download4.png" alt=""> Inbox <strong>(3)</strong></a></li>
+                  <li><a href="#"><img src="img/icons/14x14/upload4.png" alt=""> Outbox</a></li>
+                  <li><a href="#"><img src="img/icons/14x14/trash.png" alt=""> Trash</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contentInner">
+
+          <div class="iWidgets" align="center">
+            <a href="#" rel="tipsyN" title="Add something" class="iWidget"><img src="img/icons/24x24/add.png" alt=""></a>
+            <a href="#" rel="tipsyN" title="Change grid" class="iWidget"><img src="img/icons/24x24/grid.png" alt=""></a>
+            <a href="#" rel="tipsyN" title="Love buttons" class="iWidget"><img src="img/icons/24x24/heart.png" alt=""></a>
+            <a href="#" rel="tipsyN" title="Upload something" class="iWidget"><img src="img/icons/24x24/upload.png" alt=""></a>
+            <a href="#" rel="tipsyN" title="Displal stats" class="iWidget"><img src="img/icons/24x24/graph4.png" alt=""></a>
+            <a href="#" rel="tipsyN" title="Love again" class="iWidget"><img src="img/icons/24x24/heart.png" alt=""></a>
+          </div>
+
+          <div class="divider"><div><span></span></div></div>
+
+          <div class="sWidgets" align="center">
+            <div class="sWidget">
+              <div class="sparkContainer">
+                <span>Unique visitors</span>
+                <div class="sparklineBar"></div>
+              </div>
+              <span><a href="#">5.342 <i>unique visitors</a></i></span>
+            </div>
+            <div class="sWidget">
+              <div class="sparkContainer">
+                <span><a href="#">Monthly sales</a></span>
+                <div class="sparklineBar02"></div>
+              </div>
+              <span>$13.345,32 <i>earned</i></span>
+            </div>
+            <div class="sWidget">
+              <div class="sparkContainer">
+                <span>Registrations</span>
+                <div class="sparklineBar03"></div>
+              </div>
+              <span><a href="#">2.131 <i>new users</i></a></span>
+            </div>
+          </div>
+
+          <div class="divider"><div><span></span></div></div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="widget">
+                <div class="wTitle">
+                  <h5>Gallery with options</h5>
+                </div>
+
+                <div class="wContent">
+                  <div class="wContentHeader noSearch">
+                    <select class="chosen">
+                      <option>Choose gallery</option>
+                      <option>Option one</option>
+                      <option>Option two</option>
+                      <option>Option three</option>
+                    </select>
+
+                    <div class="inline checkPlus fRight">
+                      <a href="#" class="button sButton bAutumn">Some action</a>
+                    </div>
+                  </div>
+                  <div class="wContentInner" align="center">
+                    <ul class="thumbs" align="center">
+                      <li>
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item users isotope-item">
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item users isotope-item">
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item users isotope-item">
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item users isotope-item">
+                        <a href="#"><img src="preview/preview02.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview02.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><img src="preview/preview01.jpg" alt=""></a>
+                        <div class="actions" align="center">
+                          <div class="actionsContainer">
+                            <a href="#" class="ctrlButton removeImage"><img src="img/icons/14x14/trash.png" alt=""></a>
+                            <a class="ctrlButton fancybox" rel="group" href="preview/preview01.jpg"><img src="img/icons/14x14/magnifier.png" alt=""></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="wContentFooter hidden-tablet hidden-phone">
+                    <label for="file" class="formButton"><input class="allImages" type="checkbox"> Select all images</label>
+                    <a href="#" class="button sButton bMuddy">Delete selected images</a>
+                    <div class="fRight noSearch clearfix">
+                      <label for="file" class="inline">Upload image:</label>
+                      <div class="inline">
+                        <input type="file" id="file" name="file">
+                      </div>
+                      <a href="#" class="button noShadow sButton bAtina">Start upload</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="widget">
+                <div class="wTitle">
+                  <h5>Gallery with options</h5>
+                </div>
+
+                <div class="wContent">
+                  <div class="wContentInner">
+                    <ul class="thumbnails">
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <img src="preview/preview01.jpg" alt="">
+                          <h5>Thumbnail label</h5>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <img src="preview/preview01.jpg" alt="">
+                          <h5>Thumbnail label</h5>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <img src="preview/preview01.jpg" alt="">
+                          <h5>Thumbnail label</h5>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <img src="preview/preview01.jpg" alt="">
+                          <h5>Thumbnail label</h5>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/ui/jquery-ui-1.9.2.custom.js"></script>
+
+    <!-- flot plugin -->
+    <script src="js/flot/excanvas.min.js"></script>    
+    <script src="js/flot/jquery.flot.js"></script>    
+    <script src="js/flot/jquery.flot.pie.min.js"></script>
+    <script src="js/flot/jquery.flot.resize.js"></script>
+    <script src="js/flot/jquery.flot.orderBars.js"></script>
+
+    <!-- Jquery form wizard -->
+    <script src="js/formWizard/jquery.form.js"></script>    
+    <script src="js/formWizard/jquery.validate.js"></script>    
+    <script src="js/formWizard/bbq.js"></script>  
+    <script src="js/formWizard/jquery.form.wizard.js"></script>
+
+    <!-- antiscroll plugin -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- fullcalendar plugin -->
+    <script src="js/fullcalendar/fullcalendar.js"></script>
+
+    <!-- tipsyS plugin -->
+    <script src="js/tipsy/jquery.tipsy.js"></script>
+
+    <!-- fancybox plugin -->
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+    <!-- uniform plugin -->
+    <script src="js/uniform/jquery.uniform.js"></script>
+
+    <!-- Jquery dataTable -->
+    <script src="js/dataTable/jquery.dataTables.js"></script>
+
+    <!-- uniform plugin -->
+    <script src="js/sparklines/jquery.sparkline.js"></script>
+
+    <!-- chosen plugin -->
+    <script src="js/chosen/chosen.jquery.js"></script>
+
+    <!-- cookie plugin -->
+    <script src="js/cookie/jquery.cookie.js"></script>
+
+    <!-- jplayer plugin -->
+    <script src="js/jplayer/jquery.jplayer.min.js"></script>
+
+    <!-- mask plugin -->
+    <script src="js/mask/jquery.maskedinput-1.3.js"></script>
+
+    <!-- easypiechart plugin -->
+    <script src="js/easypiechart/jquery.easy-pie-chart.js"></script>
+
+    <!-- globalize plugin -->
+    <script src="js/globalize/globalize.js"></script>
+    <script src="js/globalize/cultures/globalize.culture.de.js"></script>
+
+    <!-- jplayer plugin -->
+    <script src="js/jplayer/jquery.jplayer.min.js"></script>
+    <script src="js/jplayer/jplayer.playlist.min.js"></script>
+
+    <!-- ibutton plugin -->
+    <script src="js/ibutton/jquery.ibutton.js"></script>
+
+    <!-- daterangepicker plugin -->
+    <script src="js/dateRangepicker/date.js"></script>
+    <script src="js/dateRangepicker/daterangepicker.jQuery.js"></script>
+
+    <!-- antiscroll plugin -->
+    <script src="js/antiscroll/jquery-mousewheel.js"></script>    
+    <script src="js/antiscroll/antiscroll.js"></script>    
+
+    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/application.js"></script>      
+
+    <script src="js/general.js"></script>
+    <script src="js/forms.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        setTimeout('$("html").removeClass("loader")',1000);
+      });
+    </script>
+
+  </body>
+</html>
