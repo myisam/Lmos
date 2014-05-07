@@ -88,59 +88,16 @@ class AddServerInfo:
 		p=int(p)
 		input = web.input()
 		if input:
-			if input.action=='ds':
-				id=input.id.strip()
-				models.delServerInfo(id)
-				raise web.seeother('/aserver')
-			else:
-				p=int(input.p.strip())
-				server_list = models.getServerList(p)
-				server_list_info=[]
-				for i in server_list:
-					server_list_info.append(i)
-				page_list=models.get_page(p)
-				page_list_info=[]
-				for j in page_list:
-					page_list_info.append(j)
-				return  render.aserver(server_list_info,page_list_info)
-		else:
-			server_list = models.getServerList(p)
-			server_list_info=[]
-			for i in server_list:
-				server_list_info.append(i)
-			page_list=models.get_page(p)
-			page_list_info=[]
-			for j in page_list:
-				page_list_info.append(j)
-			return  render.aserver(server_list_info,page_list_info)
-
-	def POST(self):
-		input = web.input()
-		hostname=input.hostname.strip()
-		ip1=input.ip1.strip()
-		ip2=input.ip2.strip()
-		project=input.project.strip()
-		hostconfig=input.hostconfig.strip()
-		idc=input.idc.strip()
-		models.insertServerInfo(hostname,ip1,ip2,project,hostconfig,idc)
-		raise web.seeother('/aserver')
-
-class AddServerInfo1:
-	def GET(self):
-		if not base.logged():
-			raise web.seeother('/')
-		input = web.input()
-		if input:
-			if input.action=='ds':
-				id=input.id.strip()
-				models.delServerInfo(id)
-				raise web.seeother('/aserver')
-		else:
-			server_list = models.getServerList()
-			server_list_info=[]
-			for i in server_list:
-				server_list_info.append(i)
-			return  render.aserver1(server_list_info)
+			p=int(input.p.strip())
+		server_list = models.getServerList(p)
+		server_list_info=[]
+		for i in server_list:
+			server_list_info.append(i)
+		page_list=models.get_page(p)
+		page_list_info=[]
+		for j in page_list:
+			page_list_info.append(j)
+		return  render.aserver(server_list_info,page_list_info)
 
 	def POST(self):
 		input = web.input()
@@ -155,17 +112,23 @@ class AddServerInfo1:
 
 class ModifyServerInfo:
 	def __init__(self):
-		input = web.input()
+		self.input = web.input()
 		if input:
-			if input.action=='ms':
-				self.id=input.id.strip()
+				self.id=self.input.id.strip()
 	def GET(self):
 		if not base.logged():
 			raise web.seeother('/')
-		server=models.getServerInfo(self.id)
-		for server_info in server:
+		if self.input.action=='ms':
+			server=models.getServerInfo(self.id)
+			for server_info in server:
+				pass
+			return  render.mserver(server_info)
+		elif self.input.action=='ds':
+			models.delServerInfo(self.id)
+			raise web.seeother('/aserver')
+		else:
 			pass
-		return  render.mserver(server_info)
+
 	def POST(self):
 		input = web.input()
 		hostname=input.hostname.strip()

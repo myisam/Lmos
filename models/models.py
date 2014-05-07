@@ -5,6 +5,7 @@ from config.setting import db
 
 def insert_user(privilege,username,password,createtime,lastlogin,loginip,phone,email,other):
 	db.insert('users',privilege=privilege,username=username,password=password,createtime=createtime,lastlogin=lastlogin,loginip=loginip,phone=phone,email=email,other=other)
+
 def getServerList(p):
 	page_size=8
 	start =(p-1)*page_size
@@ -16,12 +17,6 @@ def get_page(p):
 	total = db.query("SELECT  count(*)  as total_server  from  servers")[0].total_server
 	return PageList(p,total)
 
-def getServerList1():
-	try:
-		results = db.query("SELECT * FROM `servers`")
-		return results
-	except IndexError:
-		return 0
 def delServerInfo(id):
 	db.delete('servers',where='id=$id', vars={'id':id})
 

@@ -10,7 +10,6 @@ urls = (
 	'/logout$', pre_fix + 'Logout',
 	'/muser', pre_fix + 'ModifyUserInfo',
 	'/aserver', pre_fix + 'AddServerInfo',
-	'/aserver1', pre_fix + 'AddServerInfo1',
 	'/mserver', pre_fix + 'ModifyServerInfo',
 	'/addhost', pre_fix + 'AddHost',
 	'/mhosts', pre_fix + 'ModifyHosts',
